@@ -1,0 +1,33 @@
+{
+  "name": "trustv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "async": "^2.6.0",
+    "dbpedia-entity-lookup": "^0.3.0",
+    "mosca": "^2.7.0",
+    "mqtt": "^2.15.3",
+    "nodemon": "^1.14.12",
+    "request": "^2.83.0",
+    "sails": "^0.12.14",
+    "sails-disk": "^0.10.10",
+    "save": "^2.3.2",
+    "wikidata-sdk": "^5.8.1",
+    "wikidata-search": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaquimBellmunt/TrustV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoaquimBellmunt/TrustV/issues"
+  },
+  "homepage": "https://github.com/JoaquimBellmunt/TrustV#readme"
+}
