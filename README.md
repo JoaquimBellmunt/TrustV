@@ -1,1 +1,1 @@
-# TrustV
+# TrustVectors MQTT server
