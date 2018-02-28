@@ -2,7 +2,9 @@
 
 
 var mqtt = require('mqtt')
-var client  = mqtt.connect('mqtt://52.221.227.104:1883')
+//var client  = mqtt.connect('mqtt://52.221.227.104:1883')
+var client  = mqtt.connect('mqtt://127.0.0.1:1883')
+var message = { name: "TrustVector", title: "Demo" }
 
 //var client  = mqtt.connect([{ host: '52.221.227.104', port: 1883 }])
  
@@ -36,7 +38,7 @@ client.subscribe('topic/client', { qos: 1 }, function(err, granted) {
     console.log("client connected : ", granted);
 });
 
-client.publish('topic/client', JSON.stringify({ name: "TrustVector", title: "Demo" }), { retain: true, qos: 1 });
+client.publish('topic/client', JSON.stringify(message), { retain: true, qos: 1 });
 
 client.on('message', function(topic, message) {
   console.log(message.toString()); // message is Buffer

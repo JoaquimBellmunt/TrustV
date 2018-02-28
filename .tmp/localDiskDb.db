@@ -1,10 +1,25 @@
 {
   "data": {
     "database": [],
+    "mqtt": [],
     "searcher": []
   },
   "schema": {
     "database": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "mqtt": {
       "id": {
         "type": "integer",
         "autoIncrement": true,
@@ -35,6 +50,7 @@
   },
   "counters": {
     "database": {},
-    "searcher": {}
+    "searcher": {},
+    "mqtt": {}
   }
 }
